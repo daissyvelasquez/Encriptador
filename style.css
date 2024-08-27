@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/*DEFINICION VARIABLES*/
+:root {
+    --color-background-footer: #203754ae;
+    --color-box:#f7f4ea;
+    --color-boton-1: #adb5bd;
+    --color-boton-2: #003049;
+    --color-boton-hover: #ddc9e2;
+    --color-fuente: #fdfdfd;
+    --color-texto:black;
+    --fuente-texto: "Lato", sans-serif;
+    --font-size: 1.2rem; 
+}
+
+body{
+    background: linear-gradient(rgba(0 0, 0, -5.03), rgba(0, 0, 0, -30.55)),url(./img/codigo_binario.jpg) no-repeat center fixed;
+    opacity: 3.89;
+    background-size: cover;
+    font-family: var(--fuente-texto);
+}
+
+.header{
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.tittle{
+    margin-left: 16vw; /* Ajusta el margen izquierdo para pantallas más pequeñas */
+    display: inline-block;
+    vertical-align: top; 
+    font-size: 2.5rem;
+}
+
+.main{
+    width: 85%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh -91px-72);
+    align-items: end;
+}
+.box1{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+
+.inputTexto{
+    width: 80%;
+    font-size: var(--font-size);
+    color: black;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+
+.inputTexto::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.contenedorAdvertencia{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(9, 9, 34);
+
+}
+.contenedorBotones{
+    font-size: 12px;
+}
+.contenedorBotones1{
+    display: flex;
+    gap:24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.botonEncriptar,
+.botonDesencriptar,
+.botonCopiar{
+    border: 1px solid black;
+    max-width: 328px;
+    width: 45%;
+    height: 67px;
+    border-radius: 12px;
+    background-color: var(--color-boton) ;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botonEncriptar:hover,
+.botonDesencriptar:hover,
+.botonCopiar:hover{
+    background-color: var(--color-boton-hover); /* Cambia a un color más oscuro al pasar el mouse */
+}
+
+.botonEncriptar{
+    background-color: var(--color-boton-1) ;
+    color: black;
+}
+
+.botonDesencriptar{
+    background-color: var(--color-boton-2) ;
+    color: white; 
+}
+
+.botonCopiar{
+    width: 100%;
+    background: transparent;
+    color: black;
+    display: none;
+
+}
+
+.box2{
+    background-color: var(--color-box);
+    height: calc( 100% +18px);
+    border-radius: 22px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.box2.ajustar{
+    justify-content: space-between;
+}
+
+.imagen{
+    width: 100%;
+}
+.oculto{
+    display: none;
+}
+
+.mensajeFinal{
+    background: none;
+    border:none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mensajeFinal.ajustar{
+    text-align: left;
+    font-weight: lighter;
+    height: 80%;
+}
+
+.texto2{
+    background: none;
+    border:none;
+    outline: none;
+    resize: none;
+    color:gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px){
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+
+    }
+    .contenedorBotones1{
+        justify-content: center;
+    }
+    .botonEncriptar,
+    .botonDesencriptar{
+        width: 45%;
+    }
+    .box2{
+        background-color: white;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .main{
+        margin: auto 16px;
+    }
+    .botonEncriptar,
+    .botonDesencriptar{
+        max-width: 100%;
+        width: 100%;
+    }  
+}
+
+.footer{
+    background: black;
+    padding: 0.3rem 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2rem;
+    
+}
+.copyrigth{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: vertical;
+    justify-content: center;
+}
+
+.copyrigth span {
+    padding-right: 30px;
+}
+.container{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+}

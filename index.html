@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Cifrar Online </title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <div class= "container">
+        <header class="header">
+            <img class="logo"src="./img/Frame 6.png" alt="Logo de Alura">
+            <h1 class="tittle">Encripta y Desencripta tus mensajes</h1>
+        </header>
+        <main>
+            <div class="main">
+                <div id ="box1" class ="box1">
+                    <textarea class="inputTexto" id="inputTexto" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="contenedorBotones">
+                    <img src="/img/bi_exclamation-circle-fill.png" alt="Icono signo admiracion">
+                    <span class="contenedorAdvertencia">Solo letras minúsculas y sin acentos</span>
+                    <div class = "contenedorBotones1">
+                        <button class="botonEncriptar" id="botonEncriptar">Encriptar</button>
+                        <button class="botonDesencriptar" id="botonDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+                <div id="box2" class="box2">
+                        <img id="imagen" src="./img/lupa.png" alt="Ilustracion encriptado" >
+                        <textarea id="mensajeFinal"class="mensajeFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                        <textarea id="texto2" class="texto2" placeholder="Ingresa el texto que desees encriptar ....."></textarea>
+                        <button class="botonCopiar" id="botonCopiar">Copiar</button>
+                </div>
+            </div>
+            </main>
+            <footer class="footer">
+                <p class="copyrigth">&copy; Copyrigth <span>2024</span> Developed by Daissy Velasquez</p>  
+            </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
